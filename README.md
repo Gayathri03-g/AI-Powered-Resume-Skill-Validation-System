@@ -1,93 +1,173 @@
-# 🎯 Skill Assessment System
+# 🤖 AI-Powered Resume Authenticity & Skill Validation System
 
-Industry-grade backend for skill-based candidate evaluation.
+An intelligent recruitment platform that verifies candidate skills using Artificial Intelligence, Natural Language Processing (NLP), and automated technical assessments. The system analyzes resumes, extracts skills, generates personalized quizzes and coding challenges, evaluates candidate performance, and produces a comprehensive hiring report. 
 
-## 🔒 System Flow
-1. **Resume Upload** → Extract text from PDF/DOCX
-2. **Skill Analysis** → Gemini-based skill extraction
-3. **Quiz Round** → Dynamic question generation and evaluation
-4. **Coding Round** → Sandboxed code execution with test cases
-5. **Final Report** → Learning-focused feedback generation
+---
 
-## 📁 Project Structure
+## 📌 Problem Statement
+
+Traditional recruitment systems rely heavily on keyword matching and manual resume screening, which can be time-consuming and vulnerable to skill exaggeration. This project addresses these challenges by automatically validating candidate skills through AI-driven assessments and coding evaluations. 
+
+---
+
+## 🚀 Features
+
+✅ Resume Upload & Parsing (PDF/DOCX)
+
+✅ AI-Based Skill Extraction
+
+✅ Resume Analysis using NLP
+
+✅ Personalized Quiz Generation
+
+✅ Semantic Answer Evaluation
+
+✅ Dynamic Coding Challenge Generation
+
+✅ Multi-Language Code Evaluation
+
+✅ Skill Authenticity Scoring
+
+✅ Automated Candidate Assessment Report
+
+✅ Recruiter-Friendly Decision Support System
+
+
+
+---
+
+## 🏗️ System Workflow
+
+```text
+Resume Upload
+      ↓
+Text Extraction
+      ↓
+Skill Extraction
+      ↓
+AI Resume Analysis
+      ↓
+Quiz Generation
+      ↓
+Quiz Evaluation
+      ↓
+Coding Challenge
+      ↓
+Code Evaluation
+      ↓
+Final Report Generation
 ```
-ttt/
-├── app/
-│   ├── api/
-│   │   └── v1/
-│   │       ├── endpoints/      # API endpoint handlers
-│   │       └── router.py       # Route aggregation
-│   ├── core/
-│   │   └── config.py          # Settings & environment
-│   └── main.py                # FastAPI app factory
-├── .env                       # Environment variables
-├── requirements.txt           # Python dependencies
-└── run.py                     # Server launcher
-```
 
-## 🚀 Quick Start (CHUNK 1.1)
 
-### 1. Install Dependencies
+
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+- FastAPI
+- Python
+- Uvicorn
+
+### AI & NLP
+- Google Gemini AI
+- spaCy
+- NLTK
+- Transformers
+- Semantic Similarity Models
+
+### Machine Learning
+- Scikit-Learn
+
+### Database & Storage
+- JSON-Based Data Processing
+- File Handling System
+
+### Development Tools
+- VS Code
+- Jupyter Notebook
+
+
+
+---
+
+## 📂 Core Modules
+
+### 📄 Resume Upload Module
+Allows candidates to upload resumes in PDF or DOCX format.
+
+### 🔍 Skill Extraction Module
+Extracts technical skills and candidate information using NLP techniques.
+
+### 🧠 AI Analysis Module
+Analyzes resume content and creates a structured candidate profile.
+
+### 📝 Quiz Generation Module
+Generates personalized technical questions based on extracted skills.
+
+### 💻 Coding Assessment Module
+Creates coding challenges tailored to candidate expertise and evaluates submitted solutions.
+
+### 📊 Report Generation Module
+Produces a detailed assessment report with performance metrics and recommendations.
+
+
+
+---
+
+## ⚙️ Installation
+
 ```bash
+git clone https://github.com/your-username/AI-Resume-Authenticity-System.git
+
+cd AI-Resume-Authenticity-System
+
 pip install -r requirements.txt
-```
 
-### 2. Configure Environment
-Copy `.env.example` to `.env` and update values:
-```bash
-GEMINI_API_KEY=your-actual-api-key
-```
-
-### 3. Run Server
-```bash
 python run.py
 ```
 
-### 4. Verify Health
-Open browser: `http://localhost:19440/health`
+### Configure Environment Variables
 
-Expected response:
-```json
-{
-  "status": "healthy",
-  "app_name": "Skill Assessment System",
-  "version": "1.0.0"
-}
+Create a `.env` file:
+
+```env
+SECRET_KEY=your_secret_key
+GEMINI_API_KEY=your_gemini_api_key
+API_HOST=0.0.0.0
+API_PORT=8000
 ```
 
-## 🔗 Connection Verification
 
-### Frontend Access
-- **Main App:** http://localhost:19440
-- **Connection Test:** http://localhost:19440/test-connection.html
-
-### API Endpoints
-- **Health Check:** http://localhost:19440/api/v1/health
-- **Connection Test:** http://localhost:19440/api/v1/connection-test
-- **CORS Test:** http://localhost:19440/api/v1/test-cors
-- **Ping:** http://localhost:19440/api/v1/ping
-
-### Visual Confirmation
-✅ Connection badge appears in top-right corner  
-✅ Shows "Backend Connected" with pulsing cyan dot  
-✅ Click badge to open detailed connection test  
-
-### Keyboard Shortcuts
-- `Ctrl/Cmd + K` - Open connection test page
-- `Escape` - Close modals
-
-**See [CONNECTION_STATUS.md](CONNECTION_STATUS.md) for complete connection details.**
-
-
-## 📚 API Documentation
-- **Swagger UI**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
-
-## 🧱 Build Progress
-- ✅ **CHUNK 1.1** - Project Skeleton & Config
-- ⏳ **CHUNK 1.2** - Resume Upload API
-- ⏳ **CHUNK 1.3** - Resume Text Extraction
-- ⏳ ... (more chunks to come)
 
 ---
-Built with zero ambiguity, one chunk at a time.
+
+## 🌟 Key Benefits
+
+- Reduces manual recruitment effort
+- Improves hiring accuracy
+- Minimizes recruiter bias
+- Validates both theoretical and practical skills
+- Supports scalable candidate evaluation
+- Provides data-driven recruitment decisions
+
+
+
+---
+
+## 🔮 Future Enhancements
+
+- Voice-Based Interview Analysis
+- Multilingual Resume Processing
+- ATS Platform Integration
+- Enterprise-Level Recruitment Dashboard
+- AI Interview Assistant
+
+
+
+
+---
+
+## ⭐ Project Goal
+
+To create an intelligent recruitment ecosystem that goes beyond traditional resume screening by combining AI, NLP, and coding assessments to verify candidate skills accurately and efficiently.
